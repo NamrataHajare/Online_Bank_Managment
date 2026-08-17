@@ -1,0 +1,609 @@
+body {
+    background-color: var(--bg);
+}
+
+html {
+    background: var(--bg);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-basic {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 55px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+
+.form-basic .form-row {
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.form-basic .form-title-row {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+/* The form title */
+.form-basic h1 {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #4c565e;
+    font-size: 24px;
+    padding: 0 10px 15px;
+    border-bottom: 2px solid #6caee0;
+    margin: 0;
+}
+
+.form-basic .form-row > label span {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #5F5F5F;
+    width: 180px;
+    text-align: right;
+    vertical-align: top;
+    padding: 12px 25px;
+}
+
+.form-basic input {
+    color: #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-basic input[type=radio], .form-basic input[type=checkbox] {
+    box-shadow: none;
+    width: auto;
+}
+
+.form-basic input[type=checkbox] {
+    margin-top: 13px;
+}
+
+.form-basic select {
+    background-color: #ffffff;
+    color: #5f5f5f;
+    box-sizing: border-box;
+    max-width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 8px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-basic textarea {
+    color: #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    height: 80px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    font: normal 13px sans-serif;
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    resize: vertical;
+}
+
+.form-basic .form-radio-buttons {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-basic .form-radio-buttons > div {
+    margin-top: 10px;
+}
+
+.form-basic .form-radio-buttons label span {
+    margin-left: 8px;
+    color: #5f5f5f;
+    font-weight: normal;
+}
+
+.form-basic .form-radio-buttons input {
+    width: auto;
+}
+
+.form-basic button {
+    display: block;
+    border-radius: 2px;
+    background-color: #6caee0;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+}
+
+/*	Making the form responsive. Remove this media query
+    if you don't need the form to work on mobile devices. */
+@media ( max-width: 600px) {
+    .form-basic {
+        padding: 30px;
+        max-width: 480px;
+    }
+
+    .form-basic .form-row {
+        max-width: 300px;
+        margin: 25px auto;
+        text-align: left;
+    }
+
+    .form-basic .form-title-row {
+        margin-bottom: 50px;
+    }
+
+    .form-basic .form-row > label span {
+        display: block;
+        text-align: left;
+        padding: 0 0 15px;
+    }
+
+    .form-basic select {
+        width: 240px;
+    }
+
+    .form-basic input[type=checkbox] {
+        margin-top: 0;
+    }
+
+    .form-basic .form-radio-buttons > div {
+        margin: 0 0 10px;
+    }
+
+    .form-basic button {
+        margin: 0;
+    }
+}
+
+.main {
+    margin-top: 70px;
+}
+
+.main-center {
+    margin-top: 30px;
+    margin: 0 auto;
+    max-width: 330px;
+    padding: 40px 40px;
+}
+
+.responstable {
+    margin: 1em 0;
+    width: 100%;
+    overflow: hidden;
+    background: #FFF;
+    color: #024457;
+    border-radius: 10px;
+    border: 1px solid #167F92;
+}
+
+.responstable tr {
+    border: 1px solid #D9E4E6;
+}
+
+.responstable tr:nth-child(odd) {
+    background-color: #EAF3F3;
+}
+
+.responstable th {
+    display: none;
+    border: 1px solid #FFF;
+    background-color: #167F92;
+    color: #FFF;
+    padding: 1em;
+}
+
+.responstable th:first-child {
+    display: table-cell;
+    text-align: center;
+}
+
+.responstable th:nth-child(2) {
+    display: table-cell;
+}
+
+.responstable th:nth-child(2) span {
+    display: none;
+}
+
+.responstable th:nth-child(2):after {
+    content: attr(data-th);
+}
+
+@media ( min-width: 480px) {
+    .responstable th:nth-child(2) span {
+        display: block;
+    }
+
+    .responstable th:nth-child(2):after {
+        display: none;
+    }
+}
+
+.responstable td {
+    display: block;
+    word-wrap: break-word;
+    max-width: 7em;
+}
+
+.responstable td:first-child {
+    display: table-cell;
+    text-align: center;
+    border-right: 1px solid #D9E4E6;
+}
+
+@media ( min-width: 480px) {
+    .responstable td {
+        border: 1px solid #D9E4E6;
+    }
+}
+
+.responstable th, .responstable td {
+    text-align: left;
+    margin: .5em 1em;
+}
+
+@media ( min-width: 480px) {
+    .responstable th, .responstable td {
+        display: table-cell;
+        padding: 1em;
+    }
+}
+
+:root {
+    --bg: #f5f7fb;
+    --bg-elevated: #ffffff;
+    --surface: #ffffff;
+    --surface-alt: #f3f6fb;
+    --text: #1f2937;
+    --muted: #4b5563;
+    --heading: #0f172a;
+    --border: #dfe6ee;
+    --shadow: rgba(15, 23, 42, 0.08);
+    --navbar-bg: #ffffff;
+    --navbar-text: #1f2937;
+    --navbar-hover: #eef4ff;
+    --primary: #2d5ec9;
+    --primary-contrast: #ffffff;
+    --input-bg: #ffffff;
+    --input-text: #1f2937;
+    --table-header: #1f2937;
+    --table-row-alt: #f8fafc;
+    --table-border: #dfe6ee;
+    --btn-bg: #2d5ec9;
+    --btn-text: #ffffff;
+    --btn-hover: #234caf;
+    --link: #1d4ed8;
+}
+
+html[data-theme="dark"] {
+    --bg: #111827;
+    --bg-elevated: #1f2937;
+    --surface: #1b2430;
+    --surface-alt: #161e2a;
+    --text: #e5e7eb;
+    --muted: #cbd5e1;
+    --heading: #f8fafc;
+    --border: #334155;
+    --shadow: rgba(2, 6, 23, 0.45);
+    --navbar-bg: #161d2a;
+    --navbar-text: #e5e7eb;
+    --navbar-hover: #1f2a3a;
+    --primary: #60a5fa;
+    --primary-contrast: #0f172a;
+    --input-bg: #0f172a;
+    --input-text: #e5e7eb;
+    --table-header: #0f172a;
+    --table-row-alt: #162032;
+    --table-border: #2f3d52;
+    --btn-bg: #3b82f6;
+    --btn-text: #f8fafc;
+    --btn-hover: #2563eb;
+    --link: #93c5fd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--bg);
+}
+
+body {
+    padding: 0 2em;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading);
+}
+
+h1 {
+    font-family: Verdana;
+    font-weight: normal;
+}
+
+h1 span {
+    color: var(--primary);
+}
+
+p,
+label,
+small,
+span,
+li,
+th,
+td,
+.form-basic .form-row > label span,
+.form-basic .form-radio-buttons label span {
+    color: var(--text);
+}
+
+a {
+    color: var(--link);
+}
+
+.box {
+    border: 2px solid red;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    margin: 18px 0;
+    background: var(--border);
+}
+
+.navbar-default {
+    background-color: var(--navbar-bg);
+    border-color: var(--border);
+    box-shadow: 0 2px 10px var(--shadow);
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-text {
+    color: var(--navbar-text);
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: var(--navbar-hover);
+    color: var(--navbar-text);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: var(--border);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: var(--navbar-text);
+}
+
+.dropdown-menu {
+    background-color: var(--surface);
+    border-color: var(--border);
+    box-shadow: 0 8px 20px var(--shadow);
+}
+
+.dropdown-menu > li > a {
+    color: var(--text);
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: var(--navbar-hover);
+    color: var(--text);
+}
+
+.theme-toggle {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: var(--surface-alt);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 999px;
+    padding: 8px 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+    background-color: var(--navbar-hover);
+    border-color: var(--border);
+    color: var(--text);
+}
+
+.theme-toggle-icon {
+    font-size: 14px;
+}
+
+.form-basic {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 55px;
+    box-sizing: border-box;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: 0 1px 3px 0 var(--shadow);
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+
+.form-basic h1 {
+    color: var(--heading);
+    border-bottom: 2px solid var(--primary);
+}
+
+.form-basic .form-row > label span,
+.form-basic .form-radio-buttons label span {
+    color: var(--text);
+}
+
+.form-basic input,
+.form-basic select,
+.form-basic textarea {
+    color: var(--input-text);
+    background-color: var(--input-bg);
+    box-sizing: border-box;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 var(--shadow);
+    padding: 12px;
+    border: 1px solid var(--border);
+}
+
+.form-basic button {
+    display: block;
+    border-radius: 2px;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 var(--shadow);
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+}
+
+.form-basic button:hover,
+.form-basic button:focus {
+    background-color: var(--btn-hover);
+}
+
+.responstable {
+    margin: 1em 0;
+    width: 100%;
+    overflow: hidden;
+    background: var(--surface);
+    color: var(--text);
+    border-radius: 10px;
+    border: 1px solid var(--table-border);
+}
+
+.responstable tr {
+    border: 1px solid var(--table-border);
+}
+
+.responstable tr:nth-child(odd) {
+    background-color: var(--table-row-alt);
+}
+
+.responstable th {
+    border: 1px solid var(--table-border);
+    background-color: var(--table-header);
+    color: #ffffff;
+    padding: 1em;
+}
+
+.responstable td {
+    color: var(--text);
+    border: 1px solid var(--table-border);
+}
+
+.table,
+.table-striped > tbody > tr:nth-of-type(odd),
+.table > thead > tr > th,
+.table > tbody > tr > td {
+    background-color: var(--surface);
+    color: var(--text);
+    border-color: var(--table-border);
+}
+
+.panel,
+.panel-default,
+.panel-body,
+.well,
+.alert,
+.thumbnail,
+.list-group-item,
+.modal-content,
+.modal-header,
+.modal-footer {
+    background-color: var(--surface);
+    color: var(--text);
+    border-color: var(--border);
+}
+
+input,
+select,
+textarea,
+.form-control {
+    color: var(--input-text);
+    background-color: var(--input-bg);
+    border: 1px solid var(--border);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--muted);
+}
+
+.panel-default > .panel-heading,
+.panel-heading {
+    background-color: var(--surface-alt);
+    color: var(--heading);
+    border-color: var(--border);
+}
+
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+    border-color: var(--border);
+}
+
+.btn-default {
+    background-color: var(--surface-alt);
+    color: var(--text);
+}
+
+.btn-primary {
+    background-color: var(--btn-bg);
+    border-color: var(--btn-bg);
+    color: var(--btn-text);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--btn-hover);
+    border-color: var(--btn-hover);
+    color: var(--btn-text);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 1em;
+    }
+
+    .theme-toggle {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 480px) {
+    .responstable td {
+        border: 1px solid var(--table-border);
+    }
+}
